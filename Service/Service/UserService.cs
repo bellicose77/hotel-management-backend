@@ -55,6 +55,7 @@ namespace hotel_management_API.Service.Service
                 PhoneNumber = userDto.PhoneNumber,
                 Address = userDto.Address,
                 CreatedAt = DateTime.UtcNow,
+                Role="user"
             };
 
             _context.Users.Add(user);
